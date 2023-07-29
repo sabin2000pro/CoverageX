@@ -4,12 +4,14 @@
         "name": "Sabin Constantin Lungu",
         "email": "sabinlungu00@gmail.com",
         "password": "123mini123",
-        "accountActive": true,
         "gender": "male",
         "role": "user",
         "phone": "0788134190911",
         "dateOfBirth": "04-04-1999",
         "profilePicture": "",
+        "isLocked": false,
+        "accountActive": true,
+        "isVerified": false,
 
         "address": {
             "street": "100 Dinmont Drive",
@@ -69,11 +71,13 @@
         "name": "Mike Hendry",
         "email": "mikehendry33@gmail.com",
         "password": "poweriscool09",
-        "accountActive": false,
         "gender": "male",
         "role": "user",
         "phone": "07889451677",
         "dateOfBirth": "05-09-2001",
+        "isLocked": false,
+        "accountActive": true,
+        "isVerified": false,
 
         "address": {
             "street": "17 Park Avenue",
