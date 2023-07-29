@@ -1,0 +1,132 @@
+[
+    {
+        "id": "5d7a514b5d2c12c7449be050",
+        "name": "Sabin Constantin Lungu",
+        "email": "sabinlungu00@gmail.com",
+        "password": "123mini123",
+        "accountActive": true,
+        "gender": "male",
+        "role": "user",
+        "phone": "0788134190911",
+        "dateOfBirth": "04-04-1999",
+        "profilePicture": "",
+
+        "address": {
+            "street": "100 Dinmont Drive",
+            "city": "Edinburgh",
+            "state": "Midlothian",
+            "postalCode": "EH16 5TN",
+            "country": "United Kingdom"
+        },
+
+        "drivingLicense": {
+            "number": "DL00783490",
+            "expiryDate": "2029-08-20",
+            "issuedCity": "UK"
+        },
+
+        "drivingHistory": {
+            "accidents": 1,
+            "violations": 0,
+
+            "claims": [
+
+              {
+                "claimNumber": "CLM123456",
+                "amount": 5000,
+                "date": "2022-05-20",
+                "status": "Approved"
+              }
+
+            ]
+          },
+
+          "policies": [
+
+            {
+              "policyNumber": "POL123456",
+              "coverageType": "Comprehensive",
+              "startDate": "2023-01-01",
+              "endDate": "2024-01-01",
+              "premiumAmount": 1200
+            }
+
+          ],
+
+          "policyPreferences": {
+            "deductible": 500,
+
+            "coverageLimits": {
+              "propertyDamage": 300000,
+              "bodilyInjury": 100000
+            }
+            
+          }
+    },
+
+    {
+        "id": "5d7a514b5d2c12c7449be051",
+        "name": "Mike Hendry",
+        "email": "mikehendry33@gmail.com",
+        "password": "poweriscool09",
+        "accountActive": false,
+        "gender": "male",
+        "role": "user",
+        "phone": "07889451677",
+        "dateOfBirth": "05-09-2001",
+
+        "address": {
+            "street": "17 Park Avenue",
+            "city": "London",
+            "county": "Greater London",
+            "postalCode": "SW1A 1AA",
+            "country": "United Kingdom"
+        },
+
+        "drivingLicense": {
+            "number": "DL00914590",
+            "expiryDate": "2028-05-22",
+            "issuedCity": "UK"
+        },
+
+        "drivingHistory": {
+            "accidents": 2,
+            "violations": 0,
+
+            "claims": [
+
+              {
+                "claimNumber": "CLM123456",
+                "amount": 5000,
+                "date": "2022-05-20",
+                "status": "Approved"
+              },
+
+              {
+                "claimNumber": "CLM123457",
+                "amount": 3500,
+                "date": "2020-02-20",
+                "status": "Approved"
+              }
+
+            ]
+          },
+
+          "policies": [
+
+            {
+              "policyNumber": "POL123456",
+              "coverageType": "Comprehensive",
+              "startDate": "2023-01-01",
+              "endDate": "2024-01-01",
+              "premiumAmount": 1200
+            }
+
+          ]
+
+    },
+
+    {
+
+    }
+]
