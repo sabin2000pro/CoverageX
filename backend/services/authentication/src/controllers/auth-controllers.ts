@@ -6,6 +6,7 @@ export const registerUser = async (request: any, response: any, next: any): Prom
 
 export const loginUser = async (request: any, response: any, next: any): Promise<any> => {
     const {email, password} = request.body;
+    
 }
 
 export const forgotPassword = async (request: any, response: any, next: any): Promise<any> => {
