@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-dotenv.config({path: '/Users/sabin2000/Desktop/CoverageX/backend/services/authentication/.env'});
+dotenv.config({path: 'backend/services/authentication/.env'});
 
 import express from 'express'
 import morgan from 'morgan';
