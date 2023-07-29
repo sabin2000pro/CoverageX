@@ -1,8 +1,9 @@
-import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-dotenv.config({path: '/Users/sabin2000/Desktop/CoverageX/backend/services/authentication/.env'});
+dotenv.config({path: '.env'});
 
-const AUTH_DB_URI = process.env.AUTH_DB_URI || ""
+import mongoose from 'mongoose';
+
+const AUTH_DB_URI = process.env.AUTH_DB_URI
 
 export const connectAuthSchema = async () => {
     try {
