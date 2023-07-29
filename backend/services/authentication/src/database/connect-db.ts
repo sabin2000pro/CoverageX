@@ -1,6 +1,4 @@
-import dotenv from 'dotenv';
-dotenv.config({path: 'backend/services/authentication/.env'});
-
+require('dotenv').config();
 import mongoose from 'mongoose';
 
 const AUTH_DB_URI = process.env.AUTH_DB_URI

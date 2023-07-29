@@ -1,6 +1,4 @@
-import dotenv from 'dotenv';
-dotenv.config({path: 'backend/services/authentication/.env'});
-
+require('dotenv').config();
 import express from 'express'
 import morgan from 'morgan';
 import xss from 'xss-clean';
