@@ -1,6 +1,6 @@
 
 export const registerUser = async (request: any, response: any, next: any): Promise<any> => {
-
+    
 }
 
 export const loginUser = async (request: any, response: any, next: any): Promise<any> => {
@@ -19,3 +19,10 @@ export const getLoggedInUser = async (request: any, response: any, next: any): P
 
 }
 
+export const updatePassword = async (request: any, response: any, next: any): Promise<any> => {
+
+}
+
+export const updateProfileDetails = async (request: any, response: any, next: any): Promise<any> => {
+
+}
