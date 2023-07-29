@@ -13,8 +13,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.connectAuthSchema = void 0;
+require('dotenv').config();
 const mongoose_1 = __importDefault(require("mongoose"));
-const AUTH_DB_URI = process.env.AUTH_DB_URI || "";
+const AUTH_DB_URI = process.env.AUTH_DB_URI;
 const connectAuthSchema = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const dbConnection = yield mongoose_1.default.connect(AUTH_DB_URI);
