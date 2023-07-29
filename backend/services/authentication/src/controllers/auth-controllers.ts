@@ -1,6 +1,5 @@
 import { StatusCodes } from "http-status-codes"
 
-
 export const registerUser = async (request: any, response: any, next: any): Promise<any> => {
     
 }
