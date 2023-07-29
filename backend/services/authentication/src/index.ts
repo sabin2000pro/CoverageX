@@ -11,7 +11,7 @@ import { connectAuthSchema } from './database/connect-db';
 connectAuthSchema();
 
 const app: any = express();
-const AUTH_SERVICE_PORT: string = process.env.AUTH_SERVICE_PORT || ""
+const AUTH_SERVICE_PORT: any = process.env.AUTH_SERVICE_PORT
 
 app.use(morgan('dev'));
 app.use(xss());

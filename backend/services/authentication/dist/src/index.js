@@ -11,8 +11,10 @@ const morgan_1 = __importDefault(require("morgan"));
 const xss_clean_1 = __importDefault(require("xss-clean"));
 const cors_1 = __importDefault(require("cors"));
 const express_mongo_sanitize_1 = __importDefault(require("express-mongo-sanitize"));
+const connect_db_1 = require("./database/connect-db");
+(0, connect_db_1.connectAuthSchema)();
 const app = (0, express_1.default)();
-const AUTH_SERVICE_PORT = process.env.AUTH_SERVICE_PORT || "";
+const AUTH_SERVICE_PORT = process.env.AUTH_SERVICE_PORT;
 app.use((0, morgan_1.default)('dev'));
 app.use((0, xss_clean_1.default)());
 app.use((0, cors_1.default)({
