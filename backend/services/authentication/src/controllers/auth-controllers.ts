@@ -27,3 +27,11 @@ export const updatePassword = async (request: any, response: any, next: any): Pr
 export const updateProfileDetails = async (request: any, response: any, next: any): Promise<any> => {
 
 }
+
+export const fetchUsers = async (request: any, response: any, next: any): Promise<any> => {
+
+}
+
+export const fetchUserByID = async (request: any, response: any, next: any): Promise<any> => {
+
+}
