@@ -7,4 +7,4 @@ RUN npm install
 COPY . .
 RUN npm run build
 EXPOSE 5100
-CMD [ "npm", "start", "auth-service"]
+CMD [ "npm", "run", "start-auth:service"]
