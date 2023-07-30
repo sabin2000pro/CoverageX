@@ -34,3 +34,20 @@ services:
     volumes:
       - /app/node_modules
       - ../backend/services/analytics:/app
+
+  policies-service:
+    container_name: coveragex-policies-service
+    image: sabin2000/coveragex-policies-service
+
+    build:
+      context: ../backend/services/policies
+      dockerfile: Dockerfile
+
+    restart: always
+
+    ports:
+      - "5102:5102"
+
+    volumes:
+      - /app/node_modules
+      - ../backend/services/policies:/app
