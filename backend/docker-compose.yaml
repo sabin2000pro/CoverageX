@@ -17,3 +17,11 @@ services:
     volumes:
        - /app/node_modules
        - ../backend/services/authentication:/app
+
+  analytics-service:
+    container_name: coveragex-analytics-service
+    image: sabin2000/coveragex-analytics-service
+
+    build:
+      context: ../backend/services/analytics
+      dockerfile: Dockerfile
