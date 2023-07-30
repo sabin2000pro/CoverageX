@@ -64,3 +64,7 @@ services:
 
     ports:
       - "5103:5103"
+
+    volumes:
+      - /app/node_modules
+      - ../ackend/services/claims:/app

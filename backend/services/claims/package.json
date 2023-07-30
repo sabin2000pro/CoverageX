@@ -1,11 +1,13 @@
 {
   "name": "claims",
   "version": "1.0.0",
-  "description": "",
+  "description": "Claims Microservice Dependency File",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-claims:service": "ts-node src/index.ts",
+    "build": "tsc"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
