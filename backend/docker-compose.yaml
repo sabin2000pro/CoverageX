@@ -25,3 +25,12 @@ services:
     build:
       context: ../backend/services/analytics
       dockerfile: Dockerfile
+
+    restart: always
+  
+    ports:
+      - "5101:5101"
+
+    volumes:
+      - /app/node_modules
+      - ../backend/services/analytics:/app
