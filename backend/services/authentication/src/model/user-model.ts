@@ -41,7 +41,18 @@ export const UserSchema = new mongoose.Schema({
     role: {
         type: String,
         enum: ['regular-user', 'admin', 'agent', 'policyholder', 'claims-adjuster']
-    }
+    },
+
+    address: {
+        street: String,
+        city: String,
+        state: String,
+        postalCode: String,
+        country: String,
+    },
+
+    phone: String,
+    dateOfBirth: String
 
 }, {timestamps: true} )
 

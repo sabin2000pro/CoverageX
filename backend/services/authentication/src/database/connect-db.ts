@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 const AUTH_DB_URI = process.env.AUTH_DB_URI
 
 export const connectAuthSchema = async () => {
+    
     try {
 
       const dbConnection = await mongoose.connect(AUTH_DB_URI);
