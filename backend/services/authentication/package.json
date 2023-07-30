@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-auth:service": "ts-node src/index.ts",
+    "start:auth-service": "ts-node src/index.ts",
     "build": "tsc"
   },
   "keywords": [],

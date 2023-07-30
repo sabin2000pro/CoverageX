@@ -4,7 +4,7 @@
   "description": "Claims Microservice Dependency File",
   "main": "index.js",
   "scripts": {
-    "start-claims:service": "ts-node src/index.ts",
+    "start:claims-service": "ts-node src/index.ts",
     "build": "tsc"
   },
   

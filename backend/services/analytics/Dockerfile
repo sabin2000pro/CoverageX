@@ -7,4 +7,4 @@ RUN npm install
 COPY . .
 RUN npm run build
 EXPOSE 5101
-CMD [ "npm", "start", "analytics-service"]
+CMD [ "npm", "run", "start:analytics"]

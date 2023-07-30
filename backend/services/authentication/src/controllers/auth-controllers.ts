@@ -20,15 +20,16 @@ export const forgotPassword = asyncHandler(async (request: any, response: any, n
 
 export const verifyEmailAddress = asyncHandler(async (request: any, response: any, next: any): Promise<any> => {
     const {userId, OTP} = request.body;
+    return response.status(StatusCodes.OK).json({success: true, message: "Verify E-mail Address."});
 })
 
-export const verifyLoginMFA = async (request: any, response: any, next: any): Promise<any> => {
+export const verifyLoginMFA = asyncHandler(async (request: any, response: any, next: any): Promise<any> => {
+    return response.status(StatusCodes.OK).json({success: true, message: "Verify Login MFA here"});
+})
 
-}
-
-export const resetPassword = async (request: any, response: any, next: any): Promise<any> => {
-
-}
+export const resetPassword = asyncHandler(async (request: any, response: any, next: any): Promise<any> => {
+    
+})
 
 export const getLoggedInUser = async (request: any, response: any, next: any): Promise<any> => {
     const user = request.user.id

@@ -1,11 +1,13 @@
 {
   "name": "policies",
   "version": "1.0.0",
-  "description": "",
+  "description": "Policies Microservice Dependencies",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:policies-service": "ts-node src/index.ts",
+    "build": "tsc"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",

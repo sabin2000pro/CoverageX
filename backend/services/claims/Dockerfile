@@ -7,4 +7,4 @@ RUN npm install
 COPY . .
 RUN npm run build
 EXPOSE 5102
-CMD [ "npm", "start", "claims-service"]
+CMD [ "npm", "run", "start:claims-service"]

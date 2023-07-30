@@ -1,0 +1,43 @@
+{
+    "popularPolicies": [
+
+      {
+        "policyId": "5d7a514b5d2c12c7449be090",
+        "purchaseCount": 1
+      },
+
+      {
+        "policyId": "5d7a514b5d2c12c7449be091",
+        "purchaseCount": 1
+      }
+
+    ],
+
+    "policyTypeDistribution": {
+      "auto": 3000,
+      "home": 1500,
+      "travel": 500,
+      "pet": 300
+    },
+
+    "policyPremiumTrends": [
+
+      {
+        "date": "2023-07-01",
+        "premiumAmount": 12000
+      },
+
+      {
+        "date": "2023-07-02",
+        "premiumAmount": 13500
+      },
+
+      {
+        "date": "2023-07-03",
+        "premiumAmount": 14000
+      }
+      
+    ]
+
+  }
+  

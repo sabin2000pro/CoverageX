@@ -44,7 +44,7 @@ export const UserSchema = new mongoose.Schema({
         enum: ['regular-user', 'admin', 'agent', 'policyholder', 'claims-adjuster']
     },
 
-    address: {
+    address: { // User's address that will be displayed on the their personal profile
         street: String,
         city: String,
         state: String,
