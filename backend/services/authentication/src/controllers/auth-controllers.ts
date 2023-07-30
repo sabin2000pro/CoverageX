@@ -13,10 +13,10 @@ export const loginUser = asyncHandler(async (request: any, response: any, next: 
     return response.status(StatusCodes.OK).json({success: true, message: "Login User Here"})
 })
 
-export const forgotPassword = async (request: any, response: any, next: any): Promise<any> => {
+export const forgotPassword = asyncHandler(async (request: any, response: any, next: any): Promise<any> => {
     const {email} = request.body;
     return response.status(StatusCodes.OK).json({success: true, message: "Forgot Password Here..."});
-}
+})
 
 export const verifyEmailAddress = asyncHandler(async (request: any, response: any, next: any): Promise<any> => {
     const {userId, OTP} = request.body;
