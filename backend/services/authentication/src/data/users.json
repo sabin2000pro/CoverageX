@@ -8,7 +8,7 @@
         "role": "user",
         "phone": "0788134190911",
         "dateOfBirth": "04-04-1999",
-        "profilePicture": "",
+        "profilePicture": "no-photo.jpg",
         "isLocked": false,
         "accountActive": true,
         "isVerified": false,
@@ -64,7 +64,7 @@
             }
             
           }
-    },
+     },
 
     {
         "id": "5d7a514b5d2c12c7449be051",

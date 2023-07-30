@@ -7,7 +7,15 @@ export const connectAuthSchema = async () => {
     
     try {
 
+      if (!AUTH_DB_URI) {
+          throw new Error('No database URI provided. Please set the AUTH_DB_URI environment variable.');
+      }
+
       const dbConnection = await mongoose.connect(AUTH_DB_URI);
+
+      if(!dbConnection.connection) {
+         throw new Error(`Cannot connect to auth schema`)
+      }
 
       if(dbConnection.connection) {
          console.log(`Connected successfully to auth database...`);
@@ -17,7 +25,6 @@ export const connectAuthSchema = async () => {
         console.log(`Could not connect to auth database`)
       }
 
-
     } 
     
     catch(error) {
@@ -26,7 +33,6 @@ export const connectAuthSchema = async () => {
         
         throw new Error(error);
       }
-
 
     }
 

@@ -4,7 +4,7 @@ import morgan from 'morgan';
 import xss from 'xss-clean';
 import cors from 'cors';
 import mongoSanitize from 'express-mongo-sanitize'
-import { connectAuthSchema } from './database/connect-db';
+import { connectAuthSchema } from './database/auth-schema';
 
 connectAuthSchema();
 
