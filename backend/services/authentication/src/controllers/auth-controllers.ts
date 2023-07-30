@@ -3,7 +3,7 @@ import { User } from "../model/user-model";
 import asyncHandler from 'express-async-handler'
 
 export const registerUser = asyncHandler(async (request: any, response: any, next: any): Promise<any> => {
-    const body = request.body;
+    const {} = request.body;
 
     return response.status(StatusCodes.CREATED).json({success: true, message: 'Register User Here', data: {} })
 })
@@ -15,6 +15,7 @@ export const loginUser = asyncHandler(async (request: any, response: any, next: 
 
 export const forgotPassword = async (request: any, response: any, next: any): Promise<any> => {
     const {email} = request.body;
+    return response.status(StatusCodes.OK).json({success: true, message: "Forgot Password Here..."});
 }
 
 export const verifyEmailAddress = asyncHandler(async (request: any, response: any, next: any): Promise<any> => {
