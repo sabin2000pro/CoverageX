@@ -67,4 +67,4 @@ services:
 
     volumes:
       - /app/node_modules
-      - ../ackend/services/claims:/app
+      - ../backend/services/claims:/app
