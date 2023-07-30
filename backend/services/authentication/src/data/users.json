@@ -63,7 +63,25 @@
               "bodilyInjury": 100000
             }
             
-          }
+          },
+
+          "notifications": [
+
+            {
+              "message": "Your active policy POL123456 is due for renewal on 2024-02-01. Please review and renew your policy.",
+              "timestamp": "2023-07-30T10:15:30Z",
+              "type": "policy-renewal",
+              "read": false
+            },
+
+            {
+              "message": "Your claim with claim number CLM123456 has been processed and approved by CoverageX. The settlement amount due is £500.",
+              "timestamp": "2023-07-31T14:20:45Z",
+              "type": "claim-status",
+              "read": true
+            }
+
+          ]
      },
 
     {

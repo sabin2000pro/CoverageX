@@ -114,13 +114,48 @@ export const UserSchema = new mongoose.Schema({
    coverageLimits: {
       propertyDamage: Number,
       bodilyInjury: Number,
-    }
+    },
+
+    notifications: [
+    
+        {
+            message: String,
+            
+            sentAt: {
+                type: Date,
+                default: Date.now
+            },
+
+            notificationType: {
+                type: String,
+                enum: ['policy-renewal', 'claims-status', 'account-activation']
+            },
+
+            isRead: {
+                type: Boolean,
+                default: false
+            }
+
+        }
+    ]
 
 }
 
 }, {timestamps: true} )
 
 UserSchema.pre('save', async function(next) {
+
+    if(!this.isModified("password")) {
+        return next();
+    }
+
+    const SALT_ROUNDS = 10
+    
+    // Hash the password using bcrypt
+    const currSalt = await bcrypt.genSalt(SALT_ROUNDS);
+    this.password = await bcrypt.hash(this.password, currSalt);
+
+    return next();
 
 })
 
@@ -129,7 +164,7 @@ UserSchema.methods.compareLoginPasswords = async function(enteredPassword: strin
 }
 
 UserSchema.methods.generateAuthToken = function() {
-
+    
 }
 
 const User = mongoose.model("User", UserSchema);
