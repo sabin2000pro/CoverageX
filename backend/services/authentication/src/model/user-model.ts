@@ -120,7 +120,7 @@ export const UserSchema = new mongoose.Schema({
     
         {
             message: String,
-            
+
             sentAt: {
                 type: Date,
                 default: Date.now
@@ -137,7 +137,14 @@ export const UserSchema = new mongoose.Schema({
             }
 
         }
-    ]
+    ],
+
+    emergencyContact: {
+        name: String,
+        relationship: String,
+        phoneNumber: String,
+        emailAddress: String
+      }
 
 }
 
