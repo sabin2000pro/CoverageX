@@ -4,7 +4,7 @@ const Sidebar: React.FC = () => {
   return (
 
     <>
-
+      <span>Sidebar</span>
     </>
 
   )
