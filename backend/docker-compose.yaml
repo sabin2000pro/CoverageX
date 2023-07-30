@@ -51,3 +51,16 @@ services:
     volumes:
       - /app/node_modules
       - ../backend/services/policies:/app
+
+  claims-service:
+    container_name: coveragex-claims-service
+    image: sabin2000/coveragex-claims-service
+
+    build:
+      context: ../backend/services/claims
+      dockerfile: Dockerfile
+
+    restart: always
+
+    ports:
+      - "5103:5103"
