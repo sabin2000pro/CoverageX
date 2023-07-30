@@ -28,14 +28,14 @@ export const PolicySchema = new mongoose.Schema({
         required: true,
     },
 
-    insuredCar: {
+    vehicle: {
         make: String,
         model: String,
         year: String,
         registrationNumber: String
     },
 
-    holder: {
+    policyHolder: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
         required: true,
