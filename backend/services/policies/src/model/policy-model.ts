@@ -18,7 +18,7 @@ export const PolicySchema = new mongoose.Schema({
 
         type: {
             type: String,
-            amount: Number,
+            amount: Number, // The maximum amount in £ that the insurance company is likely to pay out in the event of an accident
             deductible: Number,
             enum: ['comprehensive', 'third-party']
         }
