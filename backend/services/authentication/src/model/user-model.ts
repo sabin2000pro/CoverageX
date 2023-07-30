@@ -33,7 +33,7 @@ export const UserSchema = new mongoose.Schema({
         required: [true, "Please provide a valid password for the user"]
     },
 
-    gender: {
+    gender: { // The gender of the user
         type: String,
         required: [true, "Please specify the users gender"],
         enum: ['male', 'female', 'non-binary']
@@ -171,7 +171,7 @@ UserSchema.methods.compareLoginPasswords = async function(enteredPassword: strin
 }
 
 UserSchema.methods.generateAuthToken = function() {
-    
+    return jwt.sign({id: this._id}, process.env.AUTH_SERVICE_JWT_TOKEN!, {expiresIn: process.env.AUTH_SERVICE_JWT_EXPIRES_IN});
 }
 
 const User = mongoose.model("User", UserSchema);
