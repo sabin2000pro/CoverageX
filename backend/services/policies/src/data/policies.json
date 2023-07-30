@@ -3,13 +3,18 @@
         "id": "5d7a514b5d2c12c7449be090",
         "policyHolder": "5d7a514b5d2c12c7449be050",
         "policyNumber": "POL00176619",
-        "coverageType": "Comprehensive",
+        "coverage": {
+            "type": "comprehensive",
+            "amount": 5000,
+            "deductible": 500
+        },
 
         "vehicle": {
             "make": "Ford",
             "model": "ST Line",
             "year": "2018",
-            "registrationNumber": "SM18 VNP"
+            "registrationNumber": "SM18 VNP",
+            "vin": "VIN00000017"
         },
 
         "startDate": "2023-08-01T00:00:00Z",
@@ -21,7 +26,29 @@
 
     {
         "id": "5d7a514b5d2c12c7449be091",
-        "policyHolder": "5d7a514b5d2c12c7449be051"
+        "policyHolder": "5d7a514b5d2c12c7449be051",
+        "policyNumber": "POL00976618",
+
+        "coverage": {
+            "type": "comprehensive",
+            "amount": 3000,
+            "deductible": 200
+        },
+
+        "vehicle": {
+            "make": "Ford",
+            "model": "ST Line 3",
+            "year": "2020",
+            "registrationNumber": "SK20 CPX",
+            "vin": "VIN00000099"
+        },
+
+        "startDate": "2023-3-03T10:00:00Z",
+        "endDate": "2024-12-04T15:00:00",
+        "status": "active",
+        "premiumAmount": 1100
+
+
     }
 
 ]

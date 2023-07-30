@@ -8,17 +8,29 @@ export const PolicySchema = new mongoose.Schema({
         unique: true
     },
 
-    coverageType: {
-        type: String,
+    policyHolder: { // The ID of the policy holder is the user's ID
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
         required: true,
     },
 
-    startDate: {
+    coverage: { // The type of insurance coverage
+
+        type: {
+            type: String,
+            amount: Number,
+            deductible: Number,
+            enum: ['comprehensive', 'third-party']
+        }
+
+    },
+
+    startDate: { // Start date of the insurance policy
         type: Date,
         default: Date.now
     },
 
-    endDate: {
+    endDate: { // The date at which the policy ends at
         type: Date,
         default: Date.now
     },
@@ -28,20 +40,15 @@ export const PolicySchema = new mongoose.Schema({
         required: true,
     },
 
-    vehicle: {
+    vehicle: { // The vehicle data which belongs to this insurance policy
         make: String,
         model: String,
         year: String,
-        registrationNumber: String
-    },
+        registrationNumber: String,
+        vin: String
+    }
 
-    policyHolder: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
-        required: true,
-      }
-
-})
+}, {timestamps: true})
 
 const Policy = mongoose.model("Policy", PolicySchema);
 export {Policy}
