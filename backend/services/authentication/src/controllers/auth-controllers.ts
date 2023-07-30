@@ -17,6 +17,14 @@ export const forgotPassword = async (request: any, response: any, next: any): Pr
     const {email} = request.body;
 }
 
+export const verifyEmailAddress = asyncHandler(async (request: any, response: any, next: any): Promise<any> => {
+    const {userId, OTP} = request.body;
+})
+
+export const verifyLoginMFA = async (request: any, response: any, next: any): Promise<any> => {
+
+}
+
 export const resetPassword = async (request: any, response: any, next: any): Promise<any> => {
 
 }
@@ -42,5 +50,13 @@ export const fetchUserByID = async (request: any, response: any, next: any): Pro
 }
 
 export const updateUserDetails = async (request: any, response: any, next: any): Promise<any> => {
+
+}
+
+export const deleteUsers = async (request: any, response: any, next: any): Promise<any> => {
+
+}
+
+export const deleteUserByID = async (request: any, response: any, next: any): Promise<any> => {
 
 }
