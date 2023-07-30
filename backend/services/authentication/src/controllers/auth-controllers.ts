@@ -1,15 +1,17 @@
 import { StatusCodes } from "http-status-codes"
 import { User } from "../model/user-model";
+import asyncHandler from 'express-async-handler'
 
-export const registerUser = async (request: any, response: any, next: any): Promise<any> => {
+export const registerUser = asyncHandler(async (request: any, response: any, next: any): Promise<any> => {
     const body = request.body;
 
     return response.status(StatusCodes.CREATED).json({success: true, message: 'Register User Here', data: {} })
-}
+})
 
-export const loginUser = async (request: any, response: any, next: any): Promise<any> => {
+export const loginUser = asyncHandler(async (request: any, response: any, next: any): Promise<any> => {
     const {email, password} = request.body;
-}
+    return response.status(StatusCodes.OK).json({success: true, message: "Login User Here"})
+})
 
 export const forgotPassword = async (request: any, response: any, next: any): Promise<any> => {
     const {email} = request.body;
