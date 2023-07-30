@@ -64,7 +64,7 @@ export const UserSchema = new mongoose.Schema({
         default: false
     },
 
-    accountActive: {
+    accountActive: { // True or false if the user's account is active
         type: Boolean,
         default: false
     },
@@ -95,7 +95,28 @@ export const UserSchema = new mongoose.Schema({
             }
 
         ]
+    },
+
+    policies: [ // An array of policies that the user currently has, with its unique number, type, start and end date
+
+        {
+            policyNumber: String,
+            coverageType: String,
+            startDate: Date,
+            endDate: Date,
+            premiumAmount: Number,
+        }
+    ],
+
+    policyPreferences: {
+        deductible: Number,
+
+   coverageLimits: {
+      propertyDamage: Number,
+      bodilyInjury: Number,
     }
+
+}
 
 }, {timestamps: true} )
 
