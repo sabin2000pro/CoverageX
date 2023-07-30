@@ -4,8 +4,10 @@
   "description": "Analytics Microservice Dependency File",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-analytics:service": "ts-node src/index.ts",
+    "build": "tsc"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
