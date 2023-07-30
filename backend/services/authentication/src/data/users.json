@@ -79,6 +79,13 @@
               "timestamp": "2023-07-31T14:20:45Z",
               "type": "claim-status",
               "read": true
+            },
+
+            {
+              "message": "Welcome to CoverageX! Thank you for signing up. Your account is now active.",
+              "timestamp": "2023-07-26T09:05:12Z",
+              "type": "account-activation",
+              "read": true
             }
 
           ]
