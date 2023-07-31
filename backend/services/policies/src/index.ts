@@ -24,9 +24,17 @@ app.get('/', (request: any, response: any, next: any) => {
 const policiesServer = app.listen(POLICIES_SERVICE_PORT, (error: any) => {
     try {
 
+      if(!error) {
+        return console.log(`Policies server listening for requests on port ${POLICIES_SERVICE_PORT} in mode : ${POLICIES_SERVICE_DEV_MODE}`)
+      }
+
     } 
     
-    catch(error) {
+    catch(error: any) {
+
+       if(error) {
+         throw new Error(error);
+       }
 
     }
 })
